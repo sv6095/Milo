@@ -1,0 +1,11 @@
+version = 0.1
+
+[default.deploy.parameters]
+stack_name = "milo"
+resolve_s3 = true
+s3_prefix = "milo"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "MapName=\"Map\" PlaceIndexName=\"placeindex\" RouteCalculatorName=\"routecalculator\" lambdaFunctionName=\"milo-routeoptima\" CognitoAuthName=\"cognitoauth\""
+image_repositories = []
